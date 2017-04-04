@@ -12,6 +12,8 @@
 # Add a method to Homework called calendar that takes two arrays as parameters. The first array should be a list of names of holidays as strings and the second array should a list of the dates of those holidays as strings. The method should return a hash where the keys are the names of the holidays from the first array and the value for each key is the corresponding date from the second array. For example, calendar(['Independence Day', 'Halloween', 'Christmas'], ['4 July', '31 October', '25 December']) should return {'Independence Day' => '4 July', 'Halloween' => '31 October', 'Christmas' => '25 December'}.
 # Create a new instance of the Homework class and call each of the previous methods.
 
+# ***************************************************************************************************
+
 class Homework
 	def shout(any_string)
 		all_caps = any_string.upcase
@@ -19,30 +21,44 @@ class Homework
 	def repeat_string(this_string, qty)
 		1.upto(qty) do |i|
 			puts(i.to_s + ". " + this_string)
-			# a = i.to_s
-			# puts(a + ".")
 		end
+		""
 	end
-	def calendar(holiday_array, dates_array)
-		@holiday_array = holiday_array
+	def calendar(holidays_array, dates_array)
+		@holidays_array = holidays_array
 		@dates_array = dates_array
+
 		holiday_plus_dates_hash = {}
-		0.upto(holiday_array.length-1) do |j|
-			holiday_plus_dates_hash[:holiday_array[j]] = dates_array[j]
+
+		@holidays_array.each do |each_holiday|
+
+			for i in 0..@holidays_array.length-1
+				each_holiday = @holidays_array[i]
+				each_date = @dates_array[i]
+				holiday_plus_dates_hash[each_holiday] = each_date
+			end
 		end
+		# 0.upto(holiday_array.length-1) do |j|
+		# 	holiday_plus_dates_hash[:holiday_array[j]] = dates_array[j]
+		# end
+		# puts(holiday_plus_dates_hash)
 		puts(holiday_plus_dates_hash)
 	end
 end
 
 my_homework = Homework.new
+puts("")
 puts(my_homework.shout('hello'))
-puts(my_homework.repeat_string('Praise God!', 5))
+puts("")
+puts(my_homework.repeat_string('Praise God!', 7))
 
-holidays1 = []
-holidays2 = []
-my_guess1 = holidays1['Christmas', 'Independence_Day']
-my_guess2 = holidays2['December 25', 'July 4']
-calendar(my_guess1, my_guess2)
+holidays = ['New Years Day', 'Independence Day', 'Halloween', 'Christmas']
+holiday_dates = ['January 1', 'July 4', 'October 31', 'December 25']
+
+my_homework.calendar(holidays, holiday_dates)
+puts("")
+
+# ***************************************************************************************************
 
 
 
