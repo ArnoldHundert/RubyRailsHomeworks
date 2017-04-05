@@ -38,10 +38,6 @@ class Homework
 				holiday_plus_dates_hash[each_holiday] = each_date
 			end
 		end
-		# 0.upto(holiday_array.length-1) do |j|
-		# 	holiday_plus_dates_hash[:holiday_array[j]] = dates_array[j]
-		# end
-		# puts(holiday_plus_dates_hash)
 		puts(holiday_plus_dates_hash)
 	end
 end
