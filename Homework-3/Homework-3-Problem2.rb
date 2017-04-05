@@ -10,9 +10,22 @@ Call the speak method on an instance of each of your subclasses.
 # ***************************************************************************************************
 
 class Animal
-
-
-
+	def sound(which_animal)
+		animal_sound = which_animal
+		case animal_sound
+			when "dog"
+			  return 'bark'
+			when "cat"
+			  return 'meow'
+			when "bird"
+			  return 'tweet'
+			else
+			  return "Your animal is a mute."
+		end
+	end
+	def speak
+		
+	end
 end
 
 # ***************************************************************************************************
