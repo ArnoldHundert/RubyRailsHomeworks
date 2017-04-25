@@ -1,0 +1,23 @@
+													eBay
+													————
+
+Buyers			Type			|	Sellers				Type			|	Items_4_Sale/Listings		Type
+——————			————			|	———————				————			|	—————————————————————		————
+id				integer(PK)	|	id					integer(PK)	|	id					integer(PK)
+Name				string		|	Name					string		|	Category				string
+email				string		|	email					string		|	Description			text
+Address			string		|	Address				string		|	Pictures				
+Phone #			integer		|	Phone #				integer		|	Price					float
+PayPal Account #	integer		|	PayPal Account #		integer		|	Shipping Price			float
+Items Watching id	integer(FK)	|	Payment Methods Accepted	string		|	Listing Duration		integer
+Items Bid On id		integer(FK)	|									|	Where They’ll Ship To 	string
+							|									|	Sellers id				integer(FK)
+
+
+
+
+												Legend
+												——————
+
+												PK - Primary Key
+												FK - Foreign Key
