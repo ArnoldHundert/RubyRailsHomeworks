@@ -1,0 +1,9 @@
+<div class="contact">
+	<h2><%= link_to(contact.email, contact) %></h2>
+	<p><%= contact.name_last  %>, <% contact.name_first %></p>
+	<p>Message: <%= contact.message %></p>
+	<ul>
+		<li><%= edit_contact_link(contact) %></li>
+		<li><%= delete_contact_link(contact) %></li>
+	</ul>
+</div>

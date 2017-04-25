@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+.contact {
+	border: 2px solid black;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.notice {
+	color: blue;
+	border: 2px solid blue;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px;
+}

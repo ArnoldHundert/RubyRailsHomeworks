@@ -1,4 +1,4 @@
-# ************************************** PROBLEM 3 **************************************
+# ************************************** PROBLEM 1 **************************************
 
 # Create a class called Utility.
 # Add a class method to Utility called count_words that takes a string as a parameter. The method should return a hash where the keys are words and the values are numbers indicating the number of times the key occurred in the input string. For example, Utility.count_words('the good and the bad and the ugly') should return:
