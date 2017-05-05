@@ -1,0 +1,426 @@
+/********************************** Welcome Page **********************************/
+
+.welcome_page_1{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	/*color: rgb(0, 0, 255);*/
+	/*text-decoration: underline;*/
+	/*font-family: 'Rouge Script', cursive;*/
+}
+
+/**********************************************************************************/
+.backimg{
+	background-image: url("/assets/tan_wallpaper.jpg");
+	background-size: 100%;
+}
+.page_header_joint{
+	display: block;
+	background-color: lightyellow;
+	border-style: solid;
+	border-width: 3px;
+	border-color: darkblue;
+	box-shadow: 5px 5px 5px #888888;
+	margin: 0 auto;
+	text-align: center;
+	color: rgb(0, 0, 255);
+	font-weight: bold;
+}
+.page_header1{
+	padding: 32px 0 32px 0;
+	width: 100%;
+	-webkit-text-stroke-width:1px;
+	-webkit-text-stroke-color:black;
+	/*font-family: 'Rouge Script', cursive;*/
+	font-style: italic;
+	font-size: 48px;
+}
+.page_header2{
+	padding: 5px 0 10px 0;
+	width: 420px;
+	text-shadow: 2px 2px black;
+	font-size: 32px;
+}
+#welcomeMsgStyle{
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+}
+#welcomeMsg{
+  display: inline-block;
+  width: 75%;
+  height: 200px;
+  background-color: rgba(255, 255, 224, .7);
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkblue;
+  padding: 0 15px;
+  font-size: 22px;
+  text-align: left;
+}
+#welcomeMsg2{
+  display: inline-block;
+  width: 75%;
+  height: 180px;
+  background-color: rgba(255, 255, 224, .7);
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkblue;
+  padding: 5px 15px 0 15px;
+  font-size: 41px;
+  text-align: left;
+}
+#smNote{
+  font-size: 12px;
+}
+#annote{
+  font-size: 12px;
+}
+#annote2{
+  position: absolute;
+  bottom: 30px;
+  font-size: 12px;
+}
+#annote3{
+  display: block;
+  width: 160px;
+  background-color: white;
+  position: absolute;
+  bottom: 30px;
+  font-size: 14px;
+  color: red;
+}
+.align_job {
+  text-align: right;
+  margin-right: 38%;
+  font-size: 52px;
+}
+.align_job2 {
+  text-align: right;
+  margin-right: 28%;
+  font-size: 52px;
+}
+.align_job3 {
+  text-align: right;
+  margin-left: 22%;
+  display: block;
+  width: 800px;
+  background-color: rgba(255,255,224,.7);
+  border-style: solid;
+  border-width: 3px;
+  border-color: darkblue;
+  box-shadow: 5px 5px 5px #888888;
+  padding-left: 20px;
+  font-size: 52px;
+  font-weight: bold;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+}
+.align_job4 {
+  text-align: right;
+  color: white;
+  margin-right: 38%;
+  font-size: 52px;
+}
+.align_job5 {
+  text-align: center;
+  color: white;
+  margin-right: 38%;
+  font-size: 52px;
+}
+.align_job6 {
+  width: 600px;
+  text-align: right;
+  margin-left: 22%;
+  font-size: 52px;
+  margin-top: 23px;
+}
+.align_job7 {
+  text-align: right;
+  margin-left: 20%;
+  font-size: 52px;
+}
+.align_job8 {
+  text-align: right;
+  margin-right: 7%;
+  font-size: 52px;
+}
+.align_job9 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255,255,224,.7);
+  border-style: solid;
+  border-width: 3px;
+  border-color: darkblue;
+  box-shadow: 5px 5px 5px #888888;
+  font-size: 52px;
+  font-weight: bold;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+  width: 800px;
+}
+.align_job10 {
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  padding: 10px;
+  background-color: rgba(255,255,224,.7);
+  border-style: solid;
+  border-width: 3px;
+  border-color: darkblue;
+  box-shadow: 5px 5px 5px #888888;
+  font-size: 32px;
+  font-weight: bold;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+  width: 780px;
+  height: 300px;
+}
+.post_align1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.post_align2 {
+  display: inline-block;
+  /*float: right;*/
+  padding-top: 25px;
+  /*padding-right: 50px;*/
+}
+.post_align3 {
+  display: inline-block;
+  float: right;
+  background-color: rgba(255,255,224,.7);
+  border-style: solid;
+  border-width: 3px;
+  border-color: darkblue;
+  box-shadow: 5px 5px 5px #888888;
+  width: 250px;
+  height: 250px;
+  /*padding-right: 50px;*/
+  margin-right: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+.post_align2:hover {
+  text-align: center;
+  text-decoration: underline;
+}
+.labelStyle {
+  color: white;
+  font-family: 'Wallpoet', cursive;
+  font-size: 28px;
+}
+.labelStyle2 {
+  color: white;
+  font-family: 'Wallpoet', cursive;
+  font-size: 28px;
+}
+.fieldStyle{
+  font-size: 22px;
+  vertical-align: middle;
+}
+.fieldStyle2{
+  width: 600px;
+}
+.fieldStyle3{
+  width: 100px;
+  margin-right: 36%;
+}
+.fieldStyle4{
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+  width: 570px;
+}
+.fieldStyle5{
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+  width: 570px;
+  height: 100px;
+  line-height: normal;
+  vertical-align: text-top;
+}
+.droplist{
+  width: 60%;
+}
+.droplist select{
+  height: 35px;
+  width: 80px;
+  text-align-last: center;
+  font-size: 28px;
+}
+.button_joint{
+  position: absolute;
+  top: 470px;
+  cursor: pointer;
+  background-color: lightyellow;
+  font-size: 42px;
+  color: rgb(75, 213, 40);
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+  border-radius: 45px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: darkblue;
+}
+.button1{
+  left: 470px;
+}
+.button2{
+  left: 870px;
+}
+.buttonJobSave_joint {
+  margin-top: 25px;
+  font-size: 38px;
+  cursor: pointer;
+  background-color: lightyellow;
+  color: rgb(75, 213, 40);
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:black;
+  border-radius: 45px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: darkblue;
+}
+.buttonJobSave1{
+  margin-right: 13%;
+}
+.buttonJobSave2{
+  margin: 20px 350px;
+}
+.buttonJobSave3{
+  margin-right: 23%;
+}
+.buttonJobSave4{
+  margin-top: 30px;
+  margin-right: 23%;
+}
+.links1{
+  display: block;
+  text-align: center;
+  font-size: 32px;
+}
+.links2{
+  width: 520px;
+  margin-top: 20px;
+  margin-left: 450px;
+  background-color: white;
+  border-style: solid;
+  border-width: 3px;
+  border-color: darkblue;
+  box-shadow: 5px 5px 5px #888888;
+  text-color:rgba(75, 213, 40, .8);
+  color: #4BD528;
+}
+.required_field{
+  color: red;
+}
+/****************************** Dropdown Menu ******************************/
+.dropdown {
+	position: absolute;
+	display: inline-block;
+	width: 75px;
+	height: 70px;
+	top: 37px;
+	right: 30px;
+}
+.hamburgerMenu {
+	position: relative;
+	width: 75px;
+	height: 7px;
+	background-color: black;
+	margin: 10px 0;
+	border-radius: 8px;
+}
+/* The container <span> - needed to position the dropdown content */
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: #f9f9f9;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: darkblue;
+	width: 75px;
+	transition: opacity 1s;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+/*	background-color: #98FB98;*/ /* light green */
+/*	background-color: #98C9FB;*/ /* light blue */
+	background-color: #BBDAFA; /* lighter blue */
+}
+/* Links inside the dropdown */
+nav>li {
+	display:block;
+	float:right;
+	clear:both;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	position:relative;
+	text-align:center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: darkblue;
+}
+nav{
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+}
+nav>li>a{
+	background-color: #f9f9f9;
+	color:#666;
+	padding:10px 0px;
+	width:75px;
+	display:block;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+}
+nav nav{
+	position:absolute;
+	left:0px;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+nav>li:hover>a {
+	color:#000;
+	background-color: #f9f9f9;
+}
+div>nav>li>nav>li>a{
+	width:77px;
+}
+div>nav>li#ws>nav>li>a{
+	display: none;
+}
+/* Show the dropdown sub-menu on hover */
+div>nav>li#ws:hover>a {
+	width: 165px;
+}
+div>nav>li#ws:hover>a,
+div>nav>li#ws:hover>nav>li>a{
+	left: 0px;
+	display: block;
+}
+div>nav li:hover nav{
+	position:absolute;
+	left: 0px;
+}
+div>nav li:hover nav li a{
+	height:20px;
+	padding:10px 5px 9px 5px;
+}
+
+/****************************** Dropdown Menu ******************************/
+
+
+
