@@ -35,287 +35,95 @@
 	font-style: italic;
 	font-size: 48px;
 }
-.page_header2{
-	padding: 5px 0 10px 0;
-	width: 420px;
-	text-shadow: 2px 2px black;
-	font-size: 32px;
+.post_align1{
+	text-align: center;
+	font-size: 42px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: rgb(0, 0, 255);
 }
-#welcomeMsgStyle{
-  display: block;
-  margin-top: 30px;
-  text-align: center;
+.labelStyle1{
+	color: blue;
+	font-family: 'Wallpoet', cursive;
+	font-size: 28px;
 }
-#welcomeMsg{
-  display: inline-block;
-  width: 75%;
-  height: 200px;
-  background-color: rgba(255, 255, 224, .7);
-  border-style: solid;
-  border-width: 2px;
-  border-color: darkblue;
-  padding: 0 15px;
-  font-size: 22px;
-  text-align: left;
+.labelStyle2{
+	font-family: 'Wallpoet', cursive;
+	font-size: 22px;
 }
-#welcomeMsg2{
-  display: inline-block;
-  width: 75%;
-  height: 180px;
-  background-color: rgba(255, 255, 224, .7);
-  border-style: solid;
-  border-width: 2px;
-  border-color: darkblue;
-  padding: 5px 15px 0 15px;
-  font-size: 41px;
-  text-align: left;
+.labelStyle3{
+	font-family: 'Wallpoet', cursive;
+	font-size: 26px;
 }
-#smNote{
-  font-size: 12px;
+.labelUnderline{
+	text-decoration: underline;
 }
-#annote{
-  font-size: 12px;
-}
-#annote2{
-  position: absolute;
-  bottom: 30px;
-  font-size: 12px;
-}
-#annote3{
-  display: block;
-  width: 160px;
-  background-color: white;
-  position: absolute;
-  bottom: 30px;
-  font-size: 14px;
-  color: red;
-}
-.align_job {
-  text-align: right;
-  margin-right: 38%;
-  font-size: 52px;
-}
-.align_job2 {
-  text-align: right;
-  margin-right: 28%;
-  font-size: 52px;
-}
-.align_job3 {
-  text-align: right;
-  margin-left: 22%;
-  display: block;
-  width: 800px;
-  background-color: rgba(255,255,224,.7);
-  border-style: solid;
-  border-width: 3px;
-  border-color: darkblue;
-  box-shadow: 5px 5px 5px #888888;
-  padding-left: 20px;
-  font-size: 52px;
-  font-weight: bold;
-  -webkit-text-stroke-width:1px;
-  -webkit-text-stroke-color:black;
-}
-.align_job4 {
-  text-align: right;
-  color: white;
-  margin-right: 38%;
-  font-size: 52px;
-}
-.align_job5 {
-  text-align: center;
-  color: white;
-  margin-right: 38%;
-  font-size: 52px;
-}
-.align_job6 {
-  width: 600px;
-  text-align: right;
-  margin-left: 22%;
-  font-size: 52px;
-  margin-top: 23px;
-}
-.align_job7 {
-  text-align: right;
-  margin-left: 20%;
-  font-size: 52px;
-}
-.align_job8 {
-  text-align: right;
-  margin-right: 7%;
-  font-size: 52px;
-}
-.align_job9 {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgba(255,255,224,.7);
-  border-style: solid;
-  border-width: 3px;
-  border-color: darkblue;
-  box-shadow: 5px 5px 5px #888888;
-  font-size: 52px;
-  font-weight: bold;
-  -webkit-text-stroke-width:1px;
-  -webkit-text-stroke-color:black;
-  width: 800px;
-}
-.align_job10 {
-  display: block;
-  margin: 0 auto;
-  text-align: left;
-  padding: 10px;
-  background-color: rgba(255,255,224,.7);
-  border-style: solid;
-  border-width: 3px;
-  border-color: darkblue;
-  box-shadow: 5px 5px 5px #888888;
-  font-size: 32px;
-  font-weight: bold;
-  -webkit-text-stroke-width:1px;
-  -webkit-text-stroke-color:black;
-  width: 780px;
-  height: 300px;
-}
-.post_align1 {
-  text-align: center;
-  text-decoration: underline;
-}
-.post_align2 {
-  display: inline-block;
-  /*float: right;*/
-  padding-top: 25px;
-  /*padding-right: 50px;*/
-}
-.post_align3 {
-  display: inline-block;
-  float: right;
-  background-color: rgba(255,255,224,.7);
-  border-style: solid;
-  border-width: 3px;
-  border-color: darkblue;
-  box-shadow: 5px 5px 5px #888888;
-  width: 250px;
-  height: 250px;
-  /*padding-right: 50px;*/
-  margin-right: 25px;
-  margin-top: 25px;
-  text-align: center;
-}
-.post_align2:hover {
-  text-align: center;
-  text-decoration: underline;
-}
-.labelStyle {
-  color: white;
-  font-family: 'Wallpoet', cursive;
-  font-size: 28px;
-}
-.labelStyle2 {
-  color: white;
-  font-family: 'Wallpoet', cursive;
-  font-size: 28px;
-}
-.fieldStyle{
-  font-size: 22px;
-  vertical-align: middle;
+.fieldStyle1{
+	font-size: 22px;
+	vertical-align: middle;
 }
 .fieldStyle2{
-  width: 600px;
+	width: 300px;
 }
 .fieldStyle3{
-  width: 100px;
-  margin-right: 36%;
+	transform: scale(1.5)
 }
 .fieldStyle4{
-  margin-top: 20px;
-  margin-right: 20px;
-  font-size: 22px;
-  width: 570px;
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 22px;
+	width: 570px;
 }
-.fieldStyle5{
-  margin-top: 20px;
-  margin-right: 20px;
-  font-size: 22px;
-  width: 570px;
-  height: 100px;
-  line-height: normal;
-  vertical-align: text-top;
+.fieldWidth1{
+	width: 197px;
 }
-.droplist{
-  width: 60%;
+.fieldWidth2{
+	width: 252px;
 }
-.droplist select{
-  height: 35px;
-  width: 80px;
-  text-align-last: center;
-  font-size: 28px;
+.buttonStyle1{
+	background-color: lightyellow;
+	font-size: 18px;
+	color: rgb(0, 0, 255);
+	font-style: italic;
 }
-.button_joint{
-  position: absolute;
-  top: 470px;
-  cursor: pointer;
-  background-color: lightyellow;
-  font-size: 42px;
-  color: rgb(75, 213, 40);
-  -webkit-text-stroke-width:1px;
-  -webkit-text-stroke-color:black;
-  border-radius: 45px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: darkblue;
+.indent1{
+	padding-left: 500px;
 }
-.button1{
-  left: 470px;
+.indent2{
+	padding-left: 30px;
 }
-.button2{
-  left: 870px;
+.indent3{
+	padding-left: 150px;
 }
-.buttonJobSave_joint {
-  margin-top: 25px;
-  font-size: 38px;
-  cursor: pointer;
-  background-color: lightyellow;
-  color: rgb(75, 213, 40);
-  -webkit-text-stroke-width:1px;
-  -webkit-text-stroke-color:black;
-  border-radius: 45px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: darkblue;
+.indent4{
+	padding-right: 70px;
 }
-.buttonJobSave1{
-  margin-right: 13%;
+.indent5{
+	padding-right: 62px;
 }
-.buttonJobSave2{
-  margin: 20px 350px;
+.indent6{
+	padding-right: 52px;
 }
-.buttonJobSave3{
-  margin-right: 23%;
+.indent7{
+	margin-left: 65px;
 }
-.buttonJobSave4{
-  margin-top: 30px;
-  margin-right: 23%;
+/*.required_field{
+	color: red;
+}*/
+.post {
+	border: 2px solid black;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
-.links1{
-  display: block;
-  text-align: center;
-  font-size: 32px;
-}
-.links2{
-  width: 520px;
-  margin-top: 20px;
-  margin-left: 450px;
-  background-color: white;
-  border-style: solid;
-  border-width: 3px;
-  border-color: darkblue;
-  box-shadow: 5px 5px 5px #888888;
-  text-color:rgba(75, 213, 40, .8);
-  color: #4BD528;
-}
-.required_field{
-  color: red;
+
+.notice {
+	color: blue;
+	border: 2px solid blue;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 10px;
 }
 /****************************** Dropdown Menu ******************************/
 .dropdown {

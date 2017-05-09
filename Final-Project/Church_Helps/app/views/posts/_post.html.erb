@@ -1,0 +1,53 @@
+<div class="post">
+
+	<% if post.user %>
+		<br><div>
+			<span class="labelStyle1">Posted By: </span><%= link_to("#{post.user.fname} #{post.user.lname}", post.user, :class => "labelStyle2") %>
+		</div>
+
+		<span class="labelStyle1">Skill/Service: 
+		<%= link_to(post.skill_or_service, post) %></span>
+
+		<% if post.fee_yn %>
+			<span class="labelStyle1">&nbsp;&nbsp;&nbsp;Fee: </span><span class="labelStyle2"><%= number_to_currency(post.fee_amount) %> / <%= post.fee_per %></span>
+		<% end -%>
+
+		<br><span class="labelStyle1">Availability: </span>
+		<span class="labelStyle2">
+			<% if post.yn_sunday %>
+				Sunday
+			<% end -%>
+			<% if post.yn_monday %>
+				Monday
+			<% end -%>
+			<% if post.yn_tuesday %>
+				Tuesday
+			<% end -%>
+			<% if post.yn_wednesday %>
+				Wednesday
+			<% end -%>
+			<% if post.yn_thursday %>
+				Thursday
+			<% end -%>
+			<% if post.yn_friday %>
+				Friday
+			<% end -%>
+			<% if post.yn_saturday %>
+				Saturday
+			<% end -%>
+		</span><br>
+		<span class="labelStyle1">Hours: </span>
+		<span class="labelStyle2">	<%= post.hours %></span>
+	<% end %>
+
+	<%# if post.photo.present? %>
+		<!-- <p><%#= link_to(image_tag(post.photo.url(:medium)), post.photo.url) %></p> -->
+	<%# end %>
+
+	<% if post.user == current_user %>
+		<ul>
+			<li><%= edit_post_link(post) %></li>
+			<li><%= delete_post_link(post) %></li>
+		</ul>
+	<% end %>
+</div>

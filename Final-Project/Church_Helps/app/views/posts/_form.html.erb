@@ -1,0 +1,65 @@
+<% if @post.errors.any? %>
+	<ul class="errors">
+		<% @post.errors.full_messages.each do |error| %>
+			<li><%= error %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+<%= form_for(@post) do |f| %>
+	<div class="indent1">
+		<div>
+			<%= f.label(:skill_or_service, "Skill/Service: ", :class => "labelStyle1") %>
+			<%= f.text_field(:skill_or_service, placeholder: "ie. - Mechanic", :class => "fieldStyle1", autocomplete: "off", autofocus: true) %>
+		</div>
+		<div>
+			<%= f.label(:fee_yn, "Fee (y/n, checked='y'): ", :class => "labelStyle1") %>
+			<%= f.check_box(:fee_yn, :class => "fieldStyle3") %>
+		</div>
+
+		<%# if params[:fee_yn] == '1' %>
+			<div class="indent2">
+				<%= f.label(:fee_amount, "Fee Amount: ", :class => "labelStyle1") %>
+				<%= f.text_field(:fee_amount, placeholder: "00.00", :class => "fieldStyle1 fieldWidth1", autocomplete: "off", autocomplete: "off") %>
+			</div>
+			<div class="indent2">
+				<%= f.label(:fee_per, "Fee Per: ", :class => "labelStyle1") %>
+				<%= f.text_field(:fee_per, placeholder: "ie. - hour/week/visit", :class => "fieldStyle1 fieldWidth2", autocomplete: "off", autocomplete: "off") %>
+			</div>
+		<%# end %>
+
+		<div>
+			<%= f.label("Availability: ", :class => "labelStyle1 labelStyle3 labelUnderline") %>
+		</div>
+		<div class="indent2">
+			<%= f.check_box(:yn_sunday, :class => "fieldStyle3") %>
+			<%= f.label(:yn_sunday, "Sunday", :class => "labelStyle2 indent4") %>
+
+			<%= f.check_box(:yn_monday, :class => "fieldStyle3 indent2") %>
+			<%= f.label(:yn_monday, "Monday", :class => "labelStyle2") %>
+		<br>
+			<%= f.check_box(:yn_tuesday, :class => "fieldStyle3") %>
+			<%= f.label(:yn_tuesday, "Tuesday", :class => "labelStyle2") %>
+
+			<%= f.check_box(:yn_wednesday, :class => "indent7 fieldStyle3") %>
+			<%= f.label(:yn_wednesday, "Wednesday", :class => "labelStyle2") %>
+		<br>
+			<%= f.check_box(:yn_thursday, :class => "fieldStyle3") %>
+			<%= f.label(:yn_thursday, "Thursday", :class => "labelStyle2 indent6") %>
+
+			<%= f.check_box(:yn_friday, :class => "fieldStyle3") %>
+			<%= f.label(:yn_friday, "Friday", :class => "labelStyle2") %>
+		<br>
+			<%= f.check_box(:yn_saturday, :class => "fieldStyle3") %>
+			<%= f.label(:yn_saturday, "Saturday", :class => "labelStyle2") %>
+		</div> <br>
+		<div>
+			<%= f.label(:hours, :class => "labelStyle1") %>
+			<%= f.text_area(:hours, :class => "fieldStyle1 fieldStyle2", autocomplete: "off") %>
+		</div>
+	</div>
+		<!-- <div class="indent3"> -->
+		<div class="post_align1">
+				<%= f.submit(:class => "buttonStyle1") %>
+		</div>
+<% end %>

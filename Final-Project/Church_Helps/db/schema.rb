@@ -10,31 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170504154522) do
+ActiveRecord::Schema.define(version: 20170509004210) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "skill_or_service"
-    t.binary   "fee_yn"
+    t.boolean  "fee_yn"
     t.float    "fee_amount"
     t.string   "fee_per"
-    t.string   "availability_sunday"
-    t.string   "availability_monday"
-    t.string   "availability_tueday"
-    t.string   "availability_wednesday"
-    t.string   "availability_thursday"
-    t.string   "availability_friday"
-    t.string   "availability_saturday"
+    t.boolean  "yn_sunday"
+    t.boolean  "yn_monday"
+    t.boolean  "yn_tuesday"
+    t.boolean  "yn_wednesday"
+    t.boolean  "yn_thursday"
+    t.boolean  "yn_friday"
+    t.boolean  "yn_saturday"
     t.text     "hours"
     t.integer  "user_id"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                            default: "", null: false
     t.string   "encrypted_password",               default: "", null: false
-    t.string   "name_f"
-    t.string   "name_l"
+    t.string   "fname"
+    t.string   "lname"
     t.string   "address1"
     t.string   "address2"
     t.string   "city"

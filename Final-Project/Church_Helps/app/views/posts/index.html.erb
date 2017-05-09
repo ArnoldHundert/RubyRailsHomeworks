@@ -1,1 +1,20 @@
-<h1>This is where all of the posts will be</h1>
+<h1 class="post_align1">
+	<% if params[:query] %>
+		Searching for <em><%= params[:query] %></em>
+	<% else %>
+		<% if @posts.any? %>
+			All Skills/Services Being Offered
+		<% end %>
+	<% end %>
+</h1>
+<br>
+
+<% if params[:query] %>
+	<p>Found <%= pluralize(@posts.count, 'post') %></p>
+<% end %>
+
+<% if @posts.empty? %>
+	<p class="post_align1">No Skills/Services Found</p>
+<% else %>
+	<%= render(@posts) %>
+<% end %>
