@@ -3,57 +3,50 @@ class UsersController < ApplicationController
 	def index
 		@users = User.all
 	end
+
 	def show
 		@user = User.find(params[:id])
 	end
+
 	def new
 		@user = User.new
 	end
 
-
 	def create
-		@tweet = current_user.tweets.create(tweet_params)
-		redirect_to_tweet_if_valid(:new, 'Your tweet was successfully created!')
+		@user = current_user.users.create(user_params)
+		redirect_to_user_if_valid(:new, 'You have Successfully Registered!')
 	end
 
 	def update
-		# if @tweet.user == current_user
-		# 	@tweet.update(tweet_params)
-		# end
-
-		# @tweet.update(tweet_params) if @tweet.user == current_user
-		# redirect_to_tweet_if_valid(:edit, 'Your tweet was just updated!')
-
-		if @tweet.user == current_user
-			@tweet.update(tweet_params)
-			redirect_to_tweet_if_valid(:edit, 'Your tweet was just updated!')
+		if current_user
+			@user.update(user_params)
+			redirect_to_user_if_valid(:edit, 'Your Account Information was Updated Successfully!')
 		else
-			redirect_to(@tweet, notice: 'You are not allowed to do that!')
+			redirect_to(@tweet, notice: 'You are not authorized to do that!')
 		end
 	end
 
 	def destroy
-		@tweet.destroy
-		redirect_to(root_path, notice: 'Your tweet was deleted!')
+		@user.destroy
+		redirect_to(root_path, notice: 'Your User Account was Successfully Deleted!')
 	end
 
 	private
 
-	def get_tweet
-		@tweet = Tweet.find(params[:id])
+	def get_user
+		@user = User.find(params[:id])
 	end
 
-	def tweet_params
-		params[:tweet].permit(:title, :body, :photo)
+	def user_params
+		params.require[:user].permit(:email, :fname, :lname, :address1, :address2, :city, :state, :zip_code, :phone_number)
+		# params[:user].permit(:email, :fname, :lname, :address1, :address2, :city, :state, :zip_code, :phone_number, :photo)
 	end
 
-	def redirect_to_tweet_if_valid(action, message)
-		if @tweet.valid?
-			redirect_to(@tweet, notice: message)
+	def redirect_to_user_if_valid(action, message)
+		if @user.valid?
+			redirect_to(@user, notice: message)
 		else
 			render(action)
 		end
 	end
-
-
 end

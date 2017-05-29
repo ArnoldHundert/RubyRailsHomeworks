@@ -1,0 +1,47 @@
+<h1 class="post_align1">Register</h1>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+  <%= devise_error_messages! %>
+
+  <div class="field indent1">
+    <%= f.label :email, "Email: ", :class => "labelStyle1" %>
+    <%= f.email_field :email, :class => "fieldStyle1 fieldWidth6", autofocus: true %>
+  </div>
+
+  <div class="field indent1">
+    <%= f.label :password, "Password: ", :class => "labelStyle1" %>
+    <%= f.password_field :password, :class => "fieldStyle1 fieldWidth5", autocomplete: "off" %>
+  </div>
+  <div>
+      <% f.label :password %>
+        &nbsp<span class="labelStyle2 indent8">
+          <% if @minimum_password_length %>
+          (<%= @minimum_password_length %> characters minimum)
+        </span>
+      <% end %>
+  </div>
+
+  <div class="field indent1">
+    <%= f.label :password_confirmation, "Password Confirmation: ", :class => "labelStyle1" %><br>
+  </div>
+
+  <div class="field indent8">
+    <%= f.password_field :password_confirmation, :class => "fieldStyle1 fieldWidth5", autocomplete: "off" %>
+  </div>
+
+  <%#= render('form', f: f) %>
+
+  <%= render(partial: 'form', locals: {f: f, which_button: "register"}) %>
+
+  <%#= render(:partial => "form", :locals => {:f => f}) %>
+
+  <!-- <div class="actions post_align1"> -->
+    <%#= f.submit("Register", :class => "buttonStyle1") %>
+  <!-- </div> -->
+<% end %>
+
+<br>
+<div class="post_align2">
+  <%= render "devise/shared/links" %>
+</div>

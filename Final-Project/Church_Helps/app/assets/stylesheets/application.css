@@ -42,6 +42,13 @@
 	text-decoration: underline;
 	color: rgb(0, 0, 255);
 }
+.post_align2{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: underline;
+	color: rgb(0, 0, 255);
+}
 .labelStyle1{
 	color: blue;
 	font-family: 'Wallpoet', cursive;
@@ -58,12 +65,15 @@
 .labelUnderline{
 	text-decoration: underline;
 }
+.centerText{
+	text-align: center;
+}
 .fieldStyle1{
 	font-size: 22px;
 	vertical-align: middle;
 }
 .fieldStyle2{
-	width: 300px;
+	/*width: 300px;*/
 }
 .fieldStyle3{
 	transform: scale(1.5)
@@ -79,6 +89,24 @@
 }
 .fieldWidth2{
 	width: 252px;
+}
+.fieldWidth3{
+	width: 300px;
+}
+.fieldWidth4{
+	width: 195px;
+}
+.fieldWidth5{
+	width: 229px;
+}
+.fieldWidth6{
+	width: 264px;
+}
+.fieldWidth7{
+	width: 100px;
+}
+.fieldWidth8{
+	width: 182px;
 }
 .buttonStyle1{
 	background-color: lightyellow;
@@ -106,6 +134,21 @@
 }
 .indent7{
 	margin-left: 65px;
+}
+.indent8{
+	padding-left: 620px;
+}
+.indent9{
+	padding-left: 440px;
+}
+.droplist{
+  width: 60%;
+}
+.droplist select{
+  height: 30px;
+  width: 80px;
+  text-align-last: center;
+  font-size: 22px;
 }
 /*.required_field{
 	color: red;

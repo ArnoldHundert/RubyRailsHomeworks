@@ -1,0 +1,49 @@
+<div class="post_align1">Edit <%= resource_name.to_s.humanize %></div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+
+  <%= devise_error_messages! %>
+
+  <div class="field indent1">
+    <%= f.label :email, "Email: ", :class => "labelStyle1" %>
+    <%= f.email_field :email, :class => "fieldStyle1 fieldWidth6", autofocus: true %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field indent1">
+    <%= f.label :password, "Password: ", :class => "labelStyle1" %>
+    <%= f.password_field :password, :class => "fieldStyle1 fieldWidth5", autocomplete: "off" %>
+    <% if @minimum_password_length %>
+      <br />
+      <em><%= @minimum_password_length %> characters minimum</em>
+      <i>(leave blank if you don't want to change it)</i>
+    <% end %>
+  </div>
+
+  <div class="field indent9">
+    <%= f.label :password_confirmation, "Password Confirmation: ", :class => "labelStyle1" %>
+    <%= f.password_field :password_confirmation, :class => "fieldStyle1 fieldWidth5", autocomplete: "off" %>
+  </div>
+
+  <%= render(partial: 'form', locals: {f: f, which_button: "edit"}) %>
+
+  <!-- <div class="actions post_align1"> -->
+    <%#= f.submit "Update", :class => "buttonStyle1" %>
+  <!-- </div> -->
+
+<% end %>
+
+<div class="actions post_align1">
+  Cancel my account
+</div>
+
+<div class="actions post_align1">
+    <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, :class => "buttonStyle1" %>
+</div>
+
+<div class="centerText">
+  <%= link_to "Back", :back %>
+</div>

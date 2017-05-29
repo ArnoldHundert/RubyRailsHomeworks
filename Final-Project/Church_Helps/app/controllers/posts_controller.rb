@@ -19,7 +19,7 @@ class PostsController < ApplicationController
 	def update
 		if @post.user == current_user
 			@post.update(post_params)
-			redirect_to_post_if_valid(:edit, 'Your post was just updated!')
+			redirect_to_post_if_valid(:edit, 'Your post was updated successfully!')
 		else
 			redirect_to(@post, notice: "You can not change someone else's post!")
 		end

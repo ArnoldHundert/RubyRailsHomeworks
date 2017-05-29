@@ -20,11 +20,11 @@
 		<%# if params[:fee_yn] == '1' %>
 			<div class="indent2">
 				<%= f.label(:fee_amount, "Fee Amount: ", :class => "labelStyle1") %>
-				<%= f.text_field(:fee_amount, placeholder: "00.00", :class => "fieldStyle1 fieldWidth1", autocomplete: "off", autocomplete: "off") %>
+				<%= f.text_field(:fee_amount, placeholder: "00.00", :class => "fieldStyle1 fieldWidth1", autocomplete: "off") %>
 			</div>
 			<div class="indent2">
 				<%= f.label(:fee_per, "Fee Per: ", :class => "labelStyle1") %>
-				<%= f.text_field(:fee_per, placeholder: "ie. - hour/week/visit", :class => "fieldStyle1 fieldWidth2", autocomplete: "off", autocomplete: "off") %>
+				<%= f.text_field(:fee_per, placeholder: "ie. - hour/week/visit", :class => "fieldStyle1 fieldWidth2", autocomplete: "off") %>
 			</div>
 		<%# end %>
 
@@ -55,7 +55,7 @@
 		</div> <br>
 		<div>
 			<%= f.label(:hours, :class => "labelStyle1") %>
-			<%= f.text_area(:hours, :class => "fieldStyle1 fieldStyle2", autocomplete: "off") %>
+			<%= f.text_area(:hours, :class => "fieldStyle1 fieldWidth3", autocomplete: "off") %>
 		</div>
 	</div>
 		<!-- <div class="indent3"> -->

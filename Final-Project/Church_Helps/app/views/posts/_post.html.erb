@@ -1,8 +1,16 @@
 <div class="post">
 
 	<% if post.user %>
-		<br><div>
-			<span class="labelStyle1">Posted By: </span><%= link_to("#{post.user.fname} #{post.user.lname}", post.user, :class => "labelStyle2") %>
+		<br>
+		<div>
+			<% if current_user.fname == post.user.fname && current_user.lname == post.user.lname %>
+				<span class="labelStyle1">Posted By: </span><%= link_to("#{post.user.fname} #{post.user.lname}", edit_user_registration_path, :class => "labelStyle2") %>
+			<% end -%>
+			<% if current_user.fname != post.user.fname || current_user.lname != post.user.lname %>
+				<span class="labelStyle1">Posted By: </span>
+				<span class="labelStyle2"><%= ("#{post.user.fname} #{post.user.lname}") %></span>
+
+			<% end -%>
 		</div>
 
 		<span class="labelStyle1">Skill/Service: 
